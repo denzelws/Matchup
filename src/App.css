@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 128rem;
+    margin: 0 auto;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+    background: #00111c;
+    color: #fff;
+}
+
+.title {
+    color: #fcca46;
+}
+
+button {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    border: none;
+    font-weight: 400;
+    border-radius: 1rem;
+    background-color: #fcca46;
+    color: #2D2100;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffd981;
+}
+
+.app {
+    margin-top: 4rem;
+
+    button {
+        margin-top: 3rem;
+    }
+
+    p {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 2rem;
+    padding: 5rem 20rem 2rem 20rem;
+    width: 100%;
+    grid-gap: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .card-grid {
+        padding: 2rem;
+        margin-top: 10rem;
+    }
+}
