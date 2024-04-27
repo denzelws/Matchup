@@ -23,7 +23,9 @@ function App() {
     }, [])
 
     React.useEffect(() => {
-        checkWin()
+        if(cards.length > 0) {
+            checkWin()
+        }
     }, [cards])
 
     const handleMatch = (firstChoice, secondChoice) => {
